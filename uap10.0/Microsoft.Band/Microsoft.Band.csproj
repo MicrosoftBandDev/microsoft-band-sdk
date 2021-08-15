@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Claudio\AppData\Local\Temp\Pofaker\c569910e50\lib\netcore451\Microsoft.Band.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{980B7D2C-2CBF-401F-9229-922D29501407}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Microsoft.Band</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.3.20628.2</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Microsoft.Band</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.Protobuf">
+      <HintPath>lib\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Diagnostics.Debug" />
+    <Reference Include="System.Diagnostics.Tools" />
+    <Reference Include="System.Globalization" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Net.Requests" />
+    <Reference Include="System.Resources.ResourceManager" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Runtime.InteropServices" />
+    <Reference Include="System.Runtime.Serialization.Primitives" />
+    <Reference Include="System.Text.Encoding" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BandClient.cs" />
+    <Compile Include="BandResources.cs" />
+    <Compile Include="BandType.cs" />
+    <Compile Include="CargoVersions.cs" />
+    <Compile Include="FirmwareApp.cs" />
+    <Compile Include="CargoFileTime.cs" />
+    <Compile Include="BandTypeConstants.cs" />
+    <Compile Include="UsbTransportBase.cs" />
+    <Compile Include="BandUtf8Encoding.cs" />
+    <Compile Include="ExcludeFromTestCodeCoverageAttribute.cs" />
+    <Compile Include="CancellationTokenExtension.cs" />
+    <Compile Include="EnumerableExtensions.cs" />
+    <Compile Include="StringExtensions.cs" />
+    <Compile Include="CargoStreamBase.cs" />
+    <Compile Include="FirmwareSdkCheckPlatform.cs" />
+    <Compile Include="ICargoStream.cs" />
+    <Compile Include="ICargoReader.cs" />
+    <Compile Include="ICargoWriter.cs" />
+    <Compile Include="ICargoStreamWriter.cs" />
+    <Compile Include="RunningApp.cs" />
+    <Compile Include="UnicodeExtensions.cs" />
+    <Compile Include="Alpha4Pbgra32ConversionStream.cs" />
+    <Compile Include="Bgr565Pbgra32ConversionStream.cs" />
+    <Compile Include="ImageConversionStreamBase.cs" />
+    <Compile Include="ByteArrayProxyStream.cs" />
+    <Compile Include="BandIconRleCodec.cs" />
+    <Compile Include="ProviderLogLevel.cs" />
+    <Compile Include="LoggerProviderStub.cs" />
+    <Compile Include="BandColor.cs" />
+    <Compile Include="BandBitConverter.cs" />
+    <Compile Include="ILoggerProvider.cs" />
+    <Compile Include="TransportDisconnectedReason.cs" />
+    <Compile Include="TransportDisconnectedEventArgs.cs" />
+    <Compile Include="IReadableTransport.cs" />
+    <Compile Include="DisposableList`1.cs" />
+    <Compile Include="UserConsent.cs" />
+    <Compile Include="BandConstants.cs" />
+    <Compile Include="IApplicationPlatformProvider.cs" />
+    <Compile Include="BandTheme.cs" />
+    <Compile Include="PooledBuffer.cs" />
+    <Compile Include="BufferPool.cs" />
+    <Compile Include="BufferServer.cs" />
+    <Compile Include="BandConnectionType.cs" />
+    <Compile Include="CargoCommand.cs" />
+    <Compile Include="CargoCommandBT.cs" />
+    <Compile Include="CargoCommandReader.cs" />
+    <Compile Include="CargoCommandWriter.cs" />
+    <Compile Include="BandException.cs" />
+    <Compile Include="CargoStatus.cs" />
+    <Compile Include="BandOperationException.cs" />
+    <Compile Include="CargoStreamReader.cs" />
+    <Compile Include="CargoStreamWriter.cs" />
+    <Compile Include="BandIOException.cs" />
+    <Compile Include="CargoVersion.cs" />
+    <Compile Include="CommandStatusHandling.cs" />
+    <Compile Include="DeviceCommands.cs" />
+    <Compile Include="DeviceStatusCodeUtils.cs" />
+    <Compile Include="DisposableGCHandle.cs" />
+    <Compile Include="Facility.cs" />
+    <Compile Include="IBandClient.cs" />
+    <Compile Include="IBandClientManager.cs" />
+    <Compile Include="IBandInfo.cs" />
+    <Compile Include="IDeviceTransport.cs" />
+    <Compile Include="TX.cs" />
+    <Compile Include="Tiles\BandIcon.cs" />
+    <Compile Include="Tiles\BandTile.cs" />
+    <Compile Include="Tiles\BandTileExtensions.cs" />
+    <Compile Include="Tiles\BandTileButtonPressedEvent.cs" />
+    <Compile Include="Tiles\BandTileEventArgs`1.cs" />
+    <Compile Include="Tiles\TileEventContext.cs" />
+    <Compile Include="Tiles\BandTileEventBase.cs" />
+    <Compile Include="Tiles\BandTileOpenedEvent.cs" />
+    <Compile Include="Tiles\IBandTileButtonPressedEvent.cs" />
+    <Compile Include="Tiles\IBandTileClosedEvent.cs" />
+    <Compile Include="Tiles\IBandTileOpenedEvent.cs" />
+    <Compile Include="Tiles\IBandTileEvent.cs" />
+    <Compile Include="Tiles\BandTileClosedEvent.cs" />
+    <Compile Include="Tiles\GetPageLayoutArgs.cs" />
+    <Compile Include="Tiles\IBandTileManager.cs" />
+    <Compile Include="Tiles\TileData.cs" />
+    <Compile Include="Tiles\TileDataExtensions.cs" />
+    <Compile Include="Tiles\TileSettings.cs" />
+    <Compile Include="Tiles\Pages\CommonElementColors.cs" />
+    <Compile Include="Tiles\Pages\ElementColorSource.cs" />
+    <Compile Include="Tiles\Pages\IconButton.cs" />
+    <Compile Include="Tiles\Pages\IconButtonData.cs" />
+    <Compile Include="Tiles\Pages\BarcodeData.cs" />
+    <Compile Include="Tiles\Pages\PageElementData.cs" />
+    <Compile Include="Tiles\Pages\IconData.cs" />
+    <Compile Include="Tiles\Pages\PageData.cs" />
+    <Compile Include="Tiles\Pages\FilledButtonData.cs" />
+    <Compile Include="Tiles\Pages\PageElementType.cs" />
+    <Compile Include="Tiles\Pages\FilledButton.cs" />
+    <Compile Include="Tiles\Pages\TextButton.cs" />
+    <Compile Include="Tiles\Pages\TextButtonData.cs" />
+    <Compile Include="Tiles\Pages\TextData.cs" />
+    <Compile Include="Tiles\Pages\TextBlockData.cs" />
+    <Compile Include="Tiles\Pages\WrappedTextBlockData.cs" />
+    <Compile Include="Tiles\Pages\Barcode.cs" />
+    <Compile Include="Tiles\Pages\BarcodeType.cs" />
+    <Compile Include="Tiles\Pages\FlowPanel.cs" />
+    <Compile Include="Tiles\Pages\FlowPanelOrientation.cs" />
+    <Compile Include="Tiles\Pages\FilledPanel.cs" />
+    <Compile Include="Tiles\Pages\Margins.cs" />
+    <Compile Include="Tiles\Pages\Icon.cs" />
+    <Compile Include="Tiles\Pages\PageElement.cs" />
+    <Compile Include="Tiles\Pages\HorizontalAlignment.cs" />
+    <Compile Include="Tiles\Pages\VerticalAlignment.cs" />
+    <Compile Include="Tiles\Pages\PageVisibility.cs" />
+    <Compile Include="Tiles\Pages\PagePanel.cs" />
+    <Compile Include="Tiles\Pages\PageRect.cs" />
+    <Compile Include="Tiles\Pages\ScrollFlowPanel.cs" />
+    <Compile Include="Tiles\Pages\TextBlock.cs" />
+    <Compile Include="Tiles\Pages\TextBlockFont.cs" />
+    <Compile Include="Tiles\Pages\TextBlockBaselineAlignment.cs" />
+    <Compile Include="Tiles\Pages\PageLayout.cs" />
+    <Compile Include="Tiles\Pages\WrappedTextBlock.cs" />
+    <Compile Include="Tiles\Pages\WrappedTextBlockFont.cs" />
+    <Compile Include="Personalization\BandImage.cs" />
+    <Compile Include="Personalization\IBandPersonalizationManager.cs" />
+    <Compile Include="Sensors\AmbientLightSensor.cs" />
+    <Compile Include="Sensors\BandAmbientLightReading.cs" />
+    <Compile Include="Sensors\IBandAmbientLightReading.cs" />
+    <Compile Include="Sensors\BandSensorReadingBase.cs" />
+    <Compile Include="Sensors\BandSensorSampleDeserializer.cs" />
+    <Compile Include="Sensors\BandBarometerReading.cs" />
+    <Compile Include="Sensors\BarometerSensor.cs" />
+    <Compile Include="Sensors\IBandBarometerReading.cs" />
+    <Compile Include="Sensors\BandCaloriesReading.cs" />
+    <Compile Include="Sensors\CaloriesSensor.cs" />
+    <Compile Include="Sensors\IBandCaloriesReading.cs" />
+    <Compile Include="Sensors\RemoteSubscriptionSampleHeader.cs" />
+    <Compile Include="Sensors\AccelerometerSensor.cs" />
+    <Compile Include="Sensors\BandAccelerometerReading.cs" />
+    <Compile Include="Sensors\BandContactReading.cs" />
+    <Compile Include="Sensors\BandContactState.cs" />
+    <Compile Include="Sensors\BandDistanceReading.cs" />
+    <Compile Include="Sensors\BandAltimeterReading.cs" />
+    <Compile Include="Sensors\AltimeterSensor.cs" />
+    <Compile Include="Sensors\IBandAltimeterReading.cs" />
+    <Compile Include="Sensors\BandGsrReading.cs" />
+    <Compile Include="Sensors\GsrSensor.cs" />
+    <Compile Include="Sensors\IBandGsrReading.cs" />
+    <Compile Include="Sensors\BandGyroscopeReading.cs" />
+    <Compile Include="Sensors\BandHeartRateReading.cs" />
+    <Compile Include="Sensors\BandPedometerReading.cs" />
+    <Compile Include="Sensors\BandSensorBase`1.cs" />
+    <Compile Include="Sensors\PulseSensor`1.cs" />
+    <Compile Include="Sensors\BandRRIntervalReading.cs" />
+    <Compile Include="Sensors\IBandRRIntervalReading.cs" />
+    <Compile Include="Sensors\RRIntervalSensor.cs" />
+    <Compile Include="Sensors\BandSkinTemperatureReading.cs" />
+    <Compile Include="Sensors\BandUVReading.cs" />
+    <Compile Include="Sensors\ContactSensor.cs" />
+    <Compile Include="Sensors\DistanceSensor.cs" />
+    <Compile Include="Sensors\GyroscopeSensor.cs" />
+    <Compile Include="Sensors\HeartRateSensor.cs" />
+    <Compile Include="Sensors\PedometerSensor.cs" />
+    <Compile Include="Sensors\SkinTemperatureSensor.cs" />
+    <Compile Include="Sensors\SubscriptionType.cs" />
+    <Compile Include="Sensors\UVSensor.cs" />
+    <Compile Include="Sensors\BandSensorReadingEventArgs`1.cs" />
+    <Compile Include="Sensors\HeartRateQuality.cs" />
+    <Compile Include="Sensors\IBandAccelerometerReading.cs" />
+    <Compile Include="Sensors\IBandContactReading.cs" />
+    <Compile Include="Sensors\IBandContactSensor.cs" />
+    <Compile Include="Sensors\IBandDistanceReading.cs" />
+    <Compile Include="Sensors\IBandGyroscopeReading.cs" />
+    <Compile Include="Sensors\IBandHeartRateReading.cs" />
+    <Compile Include="Sensors\IBandPedometerReading.cs" />
+    <Compile Include="Sensors\IBandSensor`1.cs" />
+    <Compile Include="Sensors\IBandSensorManager.cs" />
+    <Compile Include="Sensors\IBandSensorReading.cs" />
+    <Compile Include="Sensors\IBandSkinTemperatureReading.cs" />
+    <Compile Include="Sensors\IBandUVReading.cs" />
+    <Compile Include="Sensors\MotionType.cs" />
+    <Compile Include="Sensors\UVIndexLevel.cs" />
+    <Compile Include="Protobuf\CodedOutputStreamExtensions.cs" />
+    <Compile Include="Protobuf\ProtoFileTime.cs" />
+    <Compile Include="Protobuf\ProtoGuid.cs" />
+    <Compile Include="Notifications\NotificationGenericClearTile.cs" />
+    <Compile Include="Notifications\NotificationBase.cs" />
+    <Compile Include="Notifications\NotificationPBMessageType.cs" />
+    <Compile Include="Notifications\TileManagementCommandId.cs" />
+    <Compile Include="Notifications\BandNotificationFlags.cs" />
+    <Compile Include="Notifications\BandVibrationType.cs" />
+    <Compile Include="Notifications\NotificationGenericDialog.cs" />
+    <Compile Include="Notifications\NotificationMessaging.cs" />
+    <Compile Include="Notifications\VibrationType.cs" />
+    <Compile Include="Notifications\VibrationTypeExtensions.cs" />
+    <Compile Include="Notifications\IBandNotificationManager.cs" />
+    <Compile Include="Notifications\MessageFlags.cs" />
+    <Compile Include="Notifications\NotificationID.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Claudio\AppData\Local\Temp\Pofaker\c569910e50\lib\netcore451\Google.Protobuf.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B64F5453-6730-409B-911A-A61A32A12D0A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Google.Protobuf</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ApplicationVersion>3.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Google.Protobuf</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Diagnostics.Debug" />
+    <Reference Include="System.Globalization" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Linq.Expressions" />
+    <Reference Include="System.Reflection" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Text.Encoding" />
+    <Reference Include="System.Text.RegularExpressions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ByteArray.cs" />
+    <Compile Include="ByteString.cs" />
+    <Compile Include="CodedOutputStream.cs" />
+    <Compile Include="CodedInputStream.cs" />
+    <Compile Include="IDeepCloneable`1.cs" />
+    <Compile Include="IMessage.cs" />
+    <Compile Include="FieldCodec.cs" />
+    <Compile Include="FieldCodec`1.cs" />
+    <Compile Include="FrameworkPortability.cs" />
+    <Compile Include="JsonFormatter.cs" />
+    <Compile Include="MessageExtensions.cs" />
+    <Compile Include="IMessage`1.cs" />
+    <Compile Include="InvalidProtocolBufferException.cs" />
+    <Compile Include="LimitedInputStream.cs" />
+    <Compile Include="MessageParser`1.cs" />
+    <Compile Include="Preconditions.cs" />
+    <Compile Include="WireFormat.cs" />
+    <Compile Include="Collections\MapField`2.cs" />
+    <Compile Include="Collections\ReadOnlyDictionary`2.cs" />
+    <Compile Include="Collections\RepeatedField`1.cs" />
+    <Compile Include="Compatibility\PropertyInfoExtensions.cs" />
+    <Compile Include="Compatibility\TypeExtensions.cs" />
+    <Compile Include="Reflection\IDescriptor.cs" />
+    <Compile Include="Reflection\DescriptorBase.cs" />
+    <Compile Include="Reflection\DescriptorPool.cs" />
+    <Compile Include="Reflection\DescriptorProtoFile.cs" />
+    <Compile Include="Reflection\FileDescriptorSet.cs" />
+    <Compile Include="Reflection\FileDescriptorProto.cs" />
+    <Compile Include="Reflection\DescriptorProto.cs" />
+    <Compile Include="Reflection\FieldDescriptorProto.cs" />
+    <Compile Include="Reflection\OneofDescriptorProto.cs" />
+    <Compile Include="Reflection\EnumDescriptorProto.cs" />
+    <Compile Include="Reflection\EnumValueDescriptorProto.cs" />
+    <Compile Include="Reflection\ServiceDescriptorProto.cs" />
+    <Compile Include="Reflection\MethodDescriptorProto.cs" />
+    <Compile Include="Reflection\FileOptions.cs" />
+    <Compile Include="Reflection\MessageOptions.cs" />
+    <Compile Include="Reflection\FieldOptions.cs" />
+    <Compile Include="Reflection\EnumOptions.cs" />
+    <Compile Include="Reflection\EnumValueOptions.cs" />
+    <Compile Include="Reflection\ServiceOptions.cs" />
+    <Compile Include="Reflection\MethodOptions.cs" />
+    <Compile Include="Reflection\UninterpretedOption.cs" />
+    <Compile Include="Reflection\SourceCodeInfo.cs" />
+    <Compile Include="Reflection\DescriptorUtil.cs" />
+    <Compile Include="Reflection\DescriptorValidationException.cs" />
+    <Compile Include="Reflection\EnumDescriptor.cs" />
+    <Compile Include="Reflection\EnumValueDescriptor.cs" />
+    <Compile Include="Reflection\IFieldAccessor.cs" />
+    <Compile Include="Reflection\FieldAccessorBase.cs" />
+    <Compile Include="Reflection\FieldDescriptor.cs" />
+    <Compile Include="Reflection\FieldType.cs" />
+    <Compile Include="Reflection\FileDescriptor.cs" />
+    <Compile Include="Reflection\GeneratedCodeInfo.cs" />
+    <Compile Include="Reflection\MapFieldAccessor.cs" />
+    <Compile Include="Reflection\MessageDescriptor.cs" />
+    <Compile Include="Reflection\MethodDescriptor.cs" />
+    <Compile Include="Reflection\OneofAccessor.cs" />
+    <Compile Include="Reflection\OneofDescriptor.cs" />
+    <Compile Include="Reflection\PackageDescriptor.cs" />
+    <Compile Include="Reflection\ReflectionUtil.cs" />
+    <Compile Include="Reflection\RepeatedFieldAccessor.cs" />
+    <Compile Include="Reflection\ServiceDescriptor.cs" />
+    <Compile Include="Reflection\SingleFieldAccessor.cs" />
+    <Compile Include="WellKnownTypes\Any.cs" />
+    <Compile Include="WellKnownTypes\Api.cs" />
+    <Compile Include="WellKnownTypes\Method.cs" />
+    <Compile Include="WellKnownTypes\Duration.cs" />
+    <Compile Include="WellKnownTypes\Empty.cs" />
+    <Compile Include="WellKnownTypes\FieldMask.cs" />
+    <Compile Include="WellKnownTypes\SourceContext.cs" />
+    <Compile Include="WellKnownTypes\NullValue.cs" />
+    <Compile Include="WellKnownTypes\Struct.cs" />
+    <Compile Include="WellKnownTypes\Value.cs" />
+    <Compile Include="WellKnownTypes\ListValue.cs" />
+    <Compile Include="WellKnownTypes\TimeExtensions.cs" />
+    <Compile Include="WellKnownTypes\Timestamp.cs" />
+    <Compile Include="WellKnownTypes\Type.cs" />
+    <Compile Include="WellKnownTypes\Field.cs" />
+    <Compile Include="WellKnownTypes\Enum.cs" />
+    <Compile Include="WellKnownTypes\EnumValue.cs" />
+    <Compile Include="WellKnownTypes\Option.cs" />
+    <Compile Include="WellKnownTypes\Wrappers.cs" />
+    <Compile Include="WellKnownTypes\DoubleValue.cs" />
+    <Compile Include="WellKnownTypes\FloatValue.cs" />
+    <Compile Include="WellKnownTypes\Int64Value.cs" />
+    <Compile Include="WellKnownTypes\UInt64Value.cs" />
+    <Compile Include="WellKnownTypes\Int32Value.cs" />
+    <Compile Include="WellKnownTypes\UInt32Value.cs" />
+    <Compile Include="WellKnownTypes\BoolValue.cs" />
+    <Compile Include="WellKnownTypes\StringValue.cs" />
+    <Compile Include="WellKnownTypes\BytesValue.cs" />
+    <Compile Include="WellKnownTypes\Proto\Any.cs" />
+    <Compile Include="WellKnownTypes\Proto\Api.cs" />
+    <Compile Include="WellKnownTypes\Proto\Duration.cs" />
+    <Compile Include="WellKnownTypes\Proto\Empty.cs" />
+    <Compile Include="WellKnownTypes\Proto\FieldMask.cs" />
+    <Compile Include="WellKnownTypes\Proto\SourceContext.cs" />
+    <Compile Include="WellKnownTypes\Proto\Struct.cs" />
+    <Compile Include="WellKnownTypes\Proto\Timestamp.cs" />
+    <Compile Include="WellKnownTypes\Proto\Type.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
